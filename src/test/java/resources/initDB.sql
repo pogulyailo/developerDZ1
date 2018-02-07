@@ -82,4 +82,3 @@ CREATE TABLE customers_projects (
   REFERENCES projects (project_id),
   CONSTRAINT PK_CUS_PR PRIMARY KEY (customer_id , project_id)
 );
-COMMIT;

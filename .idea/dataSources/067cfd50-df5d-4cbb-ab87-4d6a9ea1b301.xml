@@ -1156,90 +1156,100 @@ skill_id</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="278" parent="237" name="PRIMARY">
+    <column id="278" parent="237" name="sallary">
+      <Position>6</Position>
+      <DataType>decimal(10)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="279" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>dev_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="279" parent="238" name="project_id">
+    <column id="280" parent="238" name="project_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="238" name="dev_id">
+    <column id="281" parent="238" name="dev_id">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="281" parent="238" name="dev_id">
+    <index id="282" parent="238" name="dev_id">
       <ColNames>dev_id</ColNames>
     </index>
-    <key id="282" parent="238" name="PRIMARY">
+    <key id="283" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>project_id
 dev_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="283" parent="238" name="project_developer_ibfk_1">
+    <foreign-key id="284" parent="238" name="project_developer_ibfk_1">
       <ColNames>project_id</ColNames>
       <RefSchemaName>dbdz</RefSchemaName>
       <RefTableName>projects</RefTableName>
       <RefColNames>project_id</RefColNames>
     </foreign-key>
-    <foreign-key id="284" parent="238" name="project_developer_ibfk_2">
+    <foreign-key id="285" parent="238" name="project_developer_ibfk_2">
       <ColNames>dev_id</ColNames>
       <RefSchemaName>dbdz</RefSchemaName>
       <RefTableName>developers</RefTableName>
       <RefColNames>dev_id</RefColNames>
     </foreign-key>
-    <column id="285" parent="239" name="project_id">
+    <column id="286" parent="239" name="project_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="239" name="ProjectName">
+    <column id="287" parent="239" name="ProjectName">
       <Position>2</Position>
       <DataType>varchar(256)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="239" name="description">
+    <column id="288" parent="239" name="description">
       <Position>3</Position>
       <DataType>varchar(256)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="288" parent="239" name="PRIMARY">
+    <column id="289" parent="239" name="cost">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="290" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>project_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="289" parent="240" name="skill_id">
+    <column id="291" parent="240" name="skill_id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="290" parent="240" name="industry">
+    <column id="292" parent="240" name="industry">
       <Position>2</Position>
       <DataType>enum(&apos;Java&apos;, &apos;C++&apos;, &apos;C#&apos;, &apos;JS&apos;)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;Java&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="240" name="level">
+    <column id="293" parent="240" name="level">
       <Position>3</Position>
       <DataType>enum(&apos;Junior&apos;, &apos;Middle&apos;, &apos;Senior&apos;)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;Junior&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="292" parent="240" name="PRIMARY">
+    <key id="294" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>skill_id</ColNames>
       <Primary>1</Primary>
