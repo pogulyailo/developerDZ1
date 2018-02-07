@@ -1,4 +1,4 @@
-/*CREATE DATABASE dbdz;
+CREATE DATABASE dbdz;
 USE dbdz;
 
 CREATE TABLE developers (
@@ -25,12 +25,12 @@ CREATE TABLE companies (
   company_id INT AUTO_INCREMENT PRIMARY KEY,
   CompanyName VARCHAR(45) NOT NULL,
   CompanyCreationYear YEAR NOT NULL
-);
+);*/
 
 CREATE TABLE customers (
   customer_id INT AUTO_INCREMENT PRIMARY KEY,
   CustomerName VARCHAR(256) NOT NULL,
-  StateOrPrivate BOOLEAN NOT NULL
+  StateOrPrivate VARCHAR(45) NOT NULL
 );
 
 CREATE TABLE developer_projects (
@@ -81,5 +81,5 @@ CREATE TABLE customers_projects (
   FOREIGN KEY (project_id)
   REFERENCES projects (project_id),
   CONSTRAINT PK_CUS_PR PRIMARY KEY (customer_id , project_id)
-);*/
+);
 COMMIT;
