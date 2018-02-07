@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="CVS" />
     <mapping directory="$PROJECT_DIR$/developerDZ1.git" vcs="CVS" />
+    <mapping directory="C:\MySQLExamplesDZ\developerDZ1\developerDZ1" vcs="Git" />
   </component>
 </project>
